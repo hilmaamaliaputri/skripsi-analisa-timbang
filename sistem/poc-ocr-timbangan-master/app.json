@@ -1,0 +1,27 @@
+{
+  "expo": {
+    "name": "OCR Timbangan",
+    "slug": "ocr-timbangan",
+    "scheme": "ocr-timbangan",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "dark",
+    "newArchEnabled": true,
+    "platforms": ["android", "ios"],
+    "android": {
+      "package": "co.id.impstudio.ocrtimbangan",
+      "permissions": ["CAMERA", "READ_EXTERNAL_STORAGE"]
+    },
+    "ios": {
+      "bundleIdentifier": "co.id.impstudio.ocrtimbangan",
+      "infoPlist": {
+        "NSCameraUsageDescription": "Untuk memindai display timbangan",
+        "NSPhotoLibraryUsageDescription": "Untuk memilih foto timbangan dari galeri"
+      }
+    },
+    "plugins": [
+      "expo-camera",
+      "expo-image-picker"
+    ]
+  }
+}

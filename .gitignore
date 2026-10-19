@@ -1,0 +1,72 @@
+# ─── Berkas besar yang sengaja dikecualikan ───
+#
+# Model ONNX (44,5 MB) dan data bahasa Tesseract (10,8 MB) tidak dimasukkan
+# supaya repo tetap ringan dan cepat di-clone. Cara mendapatkannya ada di
+# bagian "Berkas yang tidak disertakan" pada sistem/README.md.
+
+sistem/poc-mobile-ocr-main/public/models/*.onnx
+sistem/poc-mobile-ocr-main/public/tesseract-data/*.traineddata
+
+# ─── Node / npm ───
+
+node_modules/
+dist/
+dist-ssr/
+build/
+.vite/
+*.tsbuildinfo
+package-lock.json.bak
+yarn.lock.bak
+
+# ─── Python ───
+
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+*.egg-info/
+
+# ─── Artefak training ───
+#
+# Model hasil latihan (.h5, .onnx) dan laporan evaluasi tidak dimasukkan.
+# Jalankan train.py untuk menghasilkannya kembali.
+
+sistem/poc-training-data-mobile-ocr-main/models/*
+!sistem/poc-training-data-mobile-ocr-main/models/.gitkeep
+
+# ─── Data sintetis ───
+#
+# 1000 gambar sintetis (15,5 MB) dihasilkan ulang oleh generate_synthetic.py,
+# jadi tidak perlu ikut masuk repo. labels.csv tetap disertakan karena kecil
+# dan berguna sebagai contoh format.
+
+sistem/poc-training-data-mobile-ocr-main/data/synthetic_full/images/*
+!sistem/poc-training-data-mobile-ocr-main/data/synthetic_full/images/.gitkeep
+
+# ─── Rahasia ───
+
+.env
+.env.local
+.env.*.local
+
+# ─── OS & editor ───
+
+.DS_Store
+.DS_Store?
+Thumbs.db
+desktop.ini
+.idea/
+.vscode/*
+!.vscode/extensions.json
+*.swp
+*~
+
+# ─── Log & berkas sementara ───
+
+*.log
+*.tmp
+*.bak
+*.orig
+.cache/
+.tmp/

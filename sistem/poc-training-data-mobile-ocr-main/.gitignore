@@ -1,0 +1,101 @@
+# ─── ANALISA TIMBANG TRAINING · Python ML Pipeline ───
+
+# ─── Python ───
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+*.egg
+build/
+develop-eggs/
+dist/
+eggs/
+.eggs/
+sdist/
+wheels/
+
+# ─── Virtual environments ───
+venv/
+env/
+.venv/
+.env/
+ENV/
+
+# ─── Datasets (large files, regenerable) ───
+data/*.zip
+data/prepared/
+data/synthetic/
+data/synthetic_preview.png
+!data/.gitkeep
+
+# ─── Models (large training artifacts) ───
+models/*/
+!models/.gitkeep
+*.h5
+*.pb
+*.tflite
+*.onnx
+*.pt
+*.pth
+*.ckpt
+checkpoints/
+
+# ─── ML training logs ───
+logs/
+runs/
+tb_logs/
+*.tfevents.*
+mlruns/
+wandb/
+.neptune/
+lightning_logs/
+profile_*/
+
+# ─── Jupyter ───
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# Whitelist notebook templates
+!notebooks/*.ipynb
+
+# ─── Test / Coverage ───
+.coverage
+.coverage.*
+htmlcov/
+.pytest_cache/
+.tox/
+.nox/
+
+# ─── Env & secrets ───
+.env
+.env.local
+.env.*.local
+*.pem
+*.key
+
+# ─── Editor / IDE ───
+.vscode/*
+!.vscode/extensions.json
+.idea/
+*.swp
+*.swo
+*~
+
+# ─── OS ───
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# ─── Misc ───
+.cache/
+.tmp/
+tmp/
+*.bak
+*.orig
