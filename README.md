@@ -43,8 +43,8 @@ skripsi-analisa-timbang/
 └── jurnal/                    koleksi rujukan
     ├── INDEKS-JURNAL.md       indeks utama, dikelompokkan per bab
     ├── UNDUH-MANUAL.md        paper yang perlu diunduh sendiri
-    ├── references.bib         BibTeX siap pakai
-    └── pdf/                   29 berkas PDF
+    ├── references.bib         76 entri BibTeX
+    └── pdf/                   29 berkas PDF (22 relevan)
 ```
 
 ---
